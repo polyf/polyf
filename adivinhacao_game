@@ -1,0 +1,63 @@
+import random
+print(35*'*')
+print('Bem vindo ao Jogo de adivinhação')
+print(35*'*')
+
+num = random.randint(1, 100)
+num_us = 0
+maior = num_us > num
+menor = num_us < num
+contador = 1
+tentativas = 0
+pontos = 1000
+
+tentativas = input('Escolha um nível\n'
+                 '(1) Fácil\n'
+                 '(2) Médio\n'
+                 '(3) Difícil\n'
+                 '')
+
+try:
+    tentativas = int(tentativas)
+    if tentativas == 1:
+        tentativas = 10
+    elif tentativas == 2:
+        tentativas = 6
+    elif tentativas == 3:
+        tentativas = 4
+    else:
+        print('Opção inválida')
+        tentativas = 0
+except:
+    print('Você deve inserir um número de 1 a 3')
+while contador <= tentativas:
+    num_us = input(f'Insira um número entre 1 a 100 ({contador}/{tentativas}): ')
+    if num != num_us:
+        try:
+            num_us = int(num_us)
+            print(f'Você digitou {num_us}')
+            if num_us < 0 or num_us >100:
+                print('Você deve inserir um número de 1 a 100')
+            else:
+                if num == num_us:
+                    break
+                else:
+                    if num_us <= num:
+                        print('Quase lá! Tente um número maior')
+                        contador += 1
+                        pontos -= (num - num_us)
+                    elif num_us > num:
+                        print('Na trave! Tente um número menor')
+                        contador += 1
+                        pontos -= (num_us - num)
+        except:
+            print('Conteúdo inválido.')
+if num_us != num:
+    print('Você perdeu :(')
+    print(f'O número era {num}')
+else:
+    print(f'Parabéns! Você acertou. Sua pontuação final é {pontos}. Você acertou na rodada {contador} de {tentativas} ')
+# Input sempre devolve uma string; Python não converte automaticamente
+
+
+
