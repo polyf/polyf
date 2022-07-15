@@ -1,4 +1,4 @@
-## Olá! Eu sou a Polyana e estou buscando minha primeira oportunidade como desenvolvedora :)
+## Hi, there <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" height="30px"> I'm Polyana.
 <div align="center">
   <a href="https://github.com/polyf">
   <img width="48%" src="https://github-readme-stats.vercel.app/api?username=polyf&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
