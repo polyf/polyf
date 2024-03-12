@@ -1,7 +1,7 @@
 ## Hi, there <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" height="30px"> I'm Polyana.
 <div align="center">
   <a href="https://github.com/polyf">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=polyf&layout=compact&langs_count=7&theme=synthwave"/>
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=polyf&layout=compact&langs_count=100&theme=synthwave"/>
 </div>
 <div style="display: inline_block"align="center"><br>
   <img align="center" alt="Poly-Python" height="30" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
